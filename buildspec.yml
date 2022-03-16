@@ -1,6 +1,11 @@
 version: 0.2
 
 phases:
+  install:
+    runtime-version:
+      gradle: 7.3.3
+    commands:
+      - gradle -v
   build:
     commands:
       - echo Build Starting on `date`
