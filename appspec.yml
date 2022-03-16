@@ -12,10 +12,10 @@ permissions:
 
 hooks:
   ApplicationStart:
-    - location: script/deploy.sh
+    - location: deploy.sh
       timeout: 60
       runas: ec2-user
-  VaildateService:
-    - location: script/healthCheck.sh
+  ValidateService:
+    - location: healthCheck.sh
       timeout: 60
       runas: ec2-user
