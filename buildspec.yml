@@ -5,7 +5,8 @@ phases:
     runtime-version:
       java: corretto8
     commands:
-      - gradle -v
+      - java -version
+      - mvn package
   build:
     commands:
       - echo Build Starting on `date`
