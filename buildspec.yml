@@ -1,15 +1,11 @@
 version: 0.2
 
 phases:
-  install:
-    runtime-version:
-      springboot: 2.6.3
-      gradle: 7.3.3
   build:
     commands:
       - echo Build Starting on `date`
       - chmod +x ./gradlew
-      - gradle build
+      - ./gradlew build
   post_build:
     commands:
       - echo $(basename ./build/libs/*.jar)
