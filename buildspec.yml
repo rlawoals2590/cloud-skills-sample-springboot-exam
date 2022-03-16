@@ -1,12 +1,6 @@
 version: 0.2
 
 phases:
-  install:
-    runtime-version:
-      java: corretto8
-    commands:
-      - java -version
-      - mvn package
   build:
     commands:
       - echo Build Starting on `date`
